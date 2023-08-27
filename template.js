@@ -33,6 +33,5 @@ Click_to_sigh.addEventListener("click",()=>{
 })
 
 
-
 const add= JSON.parse(localStorage.getItem(KEY))
 console.log(add.find((user) => user.name === userINP.value && user.pass === passINP.value));      
