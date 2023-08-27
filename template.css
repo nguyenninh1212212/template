@@ -1,0 +1,122 @@
+
+body{
+    background-color: orange;
+    background-image: url(./Vadim-Sadovski-space-space-art-digital-art-artwork-illustration-2198777-wallhere.com.jpg);
+   background-size: cover;
+   height: 100vh;
+   overflow: hidden;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+
+
+.template  .template_unaffted {
+  position: relative;
+   height: 600px;
+  width: 700px;
+  margin: 0 auto;
+  background-color: #eeeeee58; 
+  border-radius:15px ;
+  border: 1px solid white;
+  display: flex;
+  flex-direction: column;
+  align-items: center ;
+  justify-content: space-around;
+  box-shadow: 0 0 15px white;
+}
+ 
+.template::before {
+  content: '';
+  position: absolute;
+  height: 600px;
+  width: 700px; 
+  backdrop-filter: blur(15px);
+}
+
+.template_unaffted {
+  position: relative;
+  z-index: 1;
+}
+
+.template .template_unaffted    p{
+  font-size: 50px;
+  z-index: 1;
+  background: linear-gradient(to bottom left,orange, rgb(240, 240, 82), white);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent; 
+}
+.template_unaffted  .data_user {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  justify-content: space-around;
+  height: 40%;
+  z-index: 1;
+} 
+.template_unaffted .data_user #pass{
+  border:solid 2px rgb(204, 0, 255)  !important;
+}
+.template_unaffted .data_user #username{
+  border:solid 2px aqua !important;
+}
+.template_unaffted .data_user .dataINP,#Click_to_sigh {
+z-index: 1;
+  width: 100%;
+  height: 40px;
+  border-radius: 5px;
+  border: none;
+  position: relative;
+
+} 
+.data_user input[type="text"]:focus {
+  outline: none;
+  border: 2px solid  aqua;
+  box-shadow: 0 0 15px  aqua;
+}
+
+.data_user input[type="password"]:focus {
+  outline: none;
+  box-shadow: 0 0 15px   rgb(204, 0, 255);
+  border: 2px solid rgb(204, 0, 255);
+}
+#Click_to_sigh{
+  cursor: pointer;
+  color: white;
+  background: linear-gradient(
+    to bottom right, 
+    rgb(204, 0, 255), aqua,   rgb(204, 0, 255)
+  ); 
+
+}
+.template_unaffted .forget_and_signUp{
+  display: flex;
+  width: 50%;
+  height: 50px;
+  justify-content: space-between;
+} 
+.template_unaffted  .forget_and_signUp a {
+  font-size: 15px;
+  background: linear-gradient(to bottom right, rgb(204, 0, 255), aqua,   rgb(204, 0, 255));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent; 
+  
+}
+
+#Click_to_sigh:hover{
+  box-shadow: 0 0 20px aqua;
+}
+
+.template_unaffted  .forget_and_signUp a:hover{
+  background: linear-gradient(to bottom right,rgb(0, 0, 136), rgb(3, 114, 114),  rgb(204, 0, 255));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent; 
+}
