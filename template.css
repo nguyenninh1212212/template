@@ -60,10 +60,14 @@ body{
 
 } 
 .template_unaffted .data_user #pass{
-  border:solid 2px rgb(204, 0, 255)  !important;
+  border-bottom:solid 2px rgb(204, 0, 255)  !important;
+  background: none;
+  color: white;
 }
 .template_unaffted .data_user #username{
-  border:solid 2px aqua !important;
+  border-bottom:solid 2px aqua !important;
+  background: none;
+  color: white;
 }
 .template_unaffted .data_user .dataINP,#Click_to_sigh {
 z-index: 1;
@@ -76,22 +80,21 @@ z-index: 1;
 } 
 .data_user input[type="text"]:focus {
   outline: none;
-  border: 2px solid  aqua;
+  border-bottom: 2px solid  aqua;
   box-shadow: 0 0 15px  aqua;
 }
 
 .data_user input[type="password"]:focus {
   outline: none;
   box-shadow: 0 0 15px   rgb(204, 0, 255);
-  border: 2px solid rgb(204, 0, 255);
+  border-bottom: 2px solid rgb(204, 0, 255);
 }
 #Click_to_sigh{
   cursor: pointer;
   color: white;
-  background: linear-gradient(
-    to bottom right, 
-    rgb(204, 0, 255), aqua,   rgb(204, 0, 255)
-  ); 
+ background: none;
+ border: solid 2px aqua;
+ color: white;
 
 }
 .template_unaffted .forget_and_signUp{
@@ -111,6 +114,8 @@ z-index: 1;
 
 #Click_to_sigh:hover{
   box-shadow: 0 0 20px aqua;
+  background-color: aqua;
+  color: white;
 }
 
 .template_unaffted  .forget_and_signUp a:hover{
