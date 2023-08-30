@@ -30,7 +30,10 @@ Click_to_sigh.addEventListener("click",()=>{
     datakey.setData([...datakey.data,newData])
     localStorage.setItem(KEY,JSON.stringify(datakey.data))
     console.log(newData);
+    const add= JSON.parse(localStorage.getItem(KEY))
+const a=add.find((user) => user.name === userINP.value && user.pass === passINP.value);  
+if(a=='admin'){
+    window.location.href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+}    
 })
 
-const add= JSON.parse(localStorage.getItem(KEY))
-console.log(add.find((user) => user.name === userINP.value && user.pass === passINP.value));      
