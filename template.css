@@ -14,10 +14,10 @@ body{
 
 .template  .template_unaffted {
   position: relative;
-   height: 60px;
+   height: 600px;
   width: 700px;
   margin: 0 auto;
-  background-color: #eeeeee58; 
+  background-color: rgba(0, 0, 0, 0.323); 
   border-radius:15px ;
   border: 1px solid white;
   display: flex;
@@ -55,7 +55,9 @@ body{
   width: 80%;
   justify-content: space-around;
   height: 40%;
-  z-index: 1;
+  background:none;
+  background-color: none;
+
 } 
 .template_unaffted .data_user #pass{
   border:solid 2px rgb(204, 0, 255)  !important;
@@ -70,7 +72,7 @@ z-index: 1;
   border-radius: 5px;
   border: none;
   position: relative;
-
+  
 } 
 .data_user input[type="text"]:focus {
   outline: none;
