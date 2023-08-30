@@ -32,8 +32,8 @@ Click_to_sigh.addEventListener("click",()=>{
     console.log(newData);
 
 const add= JSON.parse(localStorage.getItem(KEY))
-const a =add.find((user) => user.name === userINP.value && user.pass === passINP.value)  ;
-if(a=="admin"){
+
+if(add.find((user) => user.name =="admin" && user.pass == "admin")){
     window.location.href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
 }else{
     alert("sai mk")}
